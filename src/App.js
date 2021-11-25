@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Box from "@mui/material/Box";
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemIcon from '@mui/material/ListItemIcon';
+// import ListItemText from '@mui/material/ListItemText';
+import { Header } from "./components/Header/Header";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import routes from "./utils/routes";
+import Navigation from "./components/Navigation/Navigation";
+// import Home from './container/Home';
+// import Booking from './container/authUser/Booking';
+// import Contact from './container/Contact';
+// import Services from './container/Services';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Box sx={{ display: "flex" }}>
+        <Box className={"nav"}>
+          <Navigation />
+        </Box>
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+          <Switch>
+            {routes.map((item, index) => {
+              return (
+                <Route exact key={index} path={item.path}>
+                  {item.component}
+                </Route>
+              );
+            })}
+          </Switch>
+        </Box>
+      </Box>
+    </Router>
   );
-}
+};
 
 export default App;

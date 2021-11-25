@@ -1,0 +1,16 @@
+button{
+   border: 1px solid rgba(255, 255, 255, 0.116); 
+   text-align: center;
+   padding: 5px 10px;
+   border-radius: 2px;
+}
+
+.navBtn{
+    color:  #D4C58C;
+    border-radius: 10px;
+}
+
+.navBtn:hover{
+    background-color: #D4C58C;
+    color: white;
+}
