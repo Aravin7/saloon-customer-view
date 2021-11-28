@@ -23,6 +23,14 @@ const navList = [
     path: "/booking",
     displayName: "BOOKING",
   },
+  {
+    path: "/store",
+    displayName: "STORE",
+  },
+  {
+    path: "/blog",
+    displayName: "BLOG",
+  },
 ];
 
 const Navigation = () => {

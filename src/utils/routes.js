@@ -3,6 +3,8 @@ import Home from "../views/Home/Home";
 import Booking from "../views/Booking/Booking";
 import ContactUs from "../views/ContactUs/ContactUs";
 import Services from "../views/Services/Services";
+import Blog from "../views/Blog/Blog";
+import Store from "../views/Store/Store";
 import Register from "../views/Register/Register";
 import SignIn from "../views/SignIn/SignIn";
 import ForgotPassword from "../views/ForgotPassword/ForgotPassword";
@@ -41,6 +43,24 @@ const routes = [
     component: (
       <div>
         <Booking />
+      </div>
+    ),
+  },
+  {
+    path: "/store",
+    displayName: "STORE",
+    component: (
+      <div>
+        <Store />
+      </div>
+    ),
+  },
+  {
+    path: "/blog",
+    displayName: "BLOG",
+    component: (
+      <div>
+        <Blog />
       </div>
     ),
   },

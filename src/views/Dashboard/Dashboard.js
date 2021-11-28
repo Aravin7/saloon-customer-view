@@ -1,11 +1,6 @@
-import React from 'react'
-import './Booking.css'
+import React from "react";
+import "./Dashboard.css";
 
-
-export const Booking = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+export const Dashboard = () => {
+  return <div></div>;
+};
