@@ -24,6 +24,7 @@ const App = () => {
         <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
           <Switch>
             {routes.map((item, index) => {
+              // console.log(routes);
               return (
                 <Route exact key={index} path={item.path}>
                   {item.component}

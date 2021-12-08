@@ -1,3 +1,4 @@
+// import { Router } from "@mui/icons-material";
 import React from "react";
 //import EntryPage from './EntryPage';
 import { Link } from "react-router-dom";
@@ -25,7 +26,7 @@ const SignIn = () => {
       </fieldset>
       <button>Login</button>
       <button type="button">
-        <Link to="/Register">Create an Account</Link>
+        <Link to="/register">Create an Account</Link>
       </button>
     </form>
   );

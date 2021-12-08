@@ -20,7 +20,7 @@ const routes = [
     ),
   },
   {
-    path: "/Contact",
+    path: "/contact",
     displayName: "Contact US",
     component: (
       <div>
