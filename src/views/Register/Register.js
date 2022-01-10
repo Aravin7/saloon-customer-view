@@ -31,7 +31,7 @@ const Register = () => (
     </fieldset>
     <button>Submit</button>
     <button type="button">
-      <Link to="/SignIn">Have an Account?</Link>
+      <Link to="/signIn">Have an Account?</Link>
     </button>
   </form>
 );

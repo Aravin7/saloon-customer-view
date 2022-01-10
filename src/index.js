@@ -1,18 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import { StyledEngineProvider } from "@mui/material/styles";
 import "./index.css";
 import App from "./App";
 
 ReactDOM.render(
-  <Router>
-    <StyledEngineProvider injectFirst>
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
-    </StyledEngineProvider>
-  </Router>,
+  <StyledEngineProvider injectFirst>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </StyledEngineProvider>,
   document.getElementById("root")
 );
 

@@ -1,0 +1,12 @@
+.drawer {
+  padding-top: 15px;
+}
+.nav-list ul {
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.nav-list ul + a > div {
+  padding-left: 30px;
+  margin-top: -10px;
+}
