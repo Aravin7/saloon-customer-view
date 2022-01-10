@@ -39,10 +39,10 @@ import routes from "../../utils/routes";
 
 //filter the the first 6 elements using index from the "routes" object array and make the navigation list
 const navList = routes.filter(function (place, index) {
-  return index < 6;
+  return index < 7;
 });
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
     <>
       <List>

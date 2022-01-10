@@ -7,11 +7,13 @@ import Blog from "../views/Blog/Blog";
 import Store from "../views/Store/Store";
 import Register from "../views/Register/Register";
 import SignIn from "../views/SignIn/SignIn";
-import ForgotPassword from "../views/ForgotPassword/ForgotPassword";
+// import ForgotPassword from "../views/ForgotPassword/ForgotPassword";
+import Dashboard from "../views/Dashboard/Dashboard";
 
 const routes = [
   {
     path: "/",
+    exact: true,
     displayName: "HOME",
     component: (
       <div>
@@ -65,15 +67,6 @@ const routes = [
     ),
   },
   {
-    path: "/register",
-    displayName: "Register",
-    component: (
-      <div>
-        <Register />
-      </div>
-    ),
-  },
-  {
     path: "/signIn",
     displayName: "Sign In",
     component: (
@@ -83,11 +76,20 @@ const routes = [
     ),
   },
   {
-    path: "/forgotPassword",
-    displayName: "forgotPassword",
+    path: "/register",
+    displayName: "Register",
     component: (
       <div>
-        <ForgotPassword />
+        <Register />
+      </div>
+    ),
+  },
+  {
+    path: "/dashboard",
+    displayName: "dashboard",
+    component: (
+      <div>
+        <Dashboard />
       </div>
     ),
   },
