@@ -1,13 +1,14 @@
 import React from "react";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemIcon from '@mui/material/ListItemIcon';
 // import ListItemText from '@mui/material/ListItemText';
-import { Header } from "./components/Header/Header";
+// import { Header } from "./components/Header/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import routes from "./utils/routes";
-import Navigation from "./components/Navigation/Navigation";
+// import routes from "./utils/routes";
+// import Navigation from "./components/Navigation/Navigation";
+import TemporaryDrawer from "./components/Drawer/TemporaryDrawer";
 // import Home from './container/Home';
 // import Booking from './container/authUser/Booking';
 // import Contact from './container/Contact';
@@ -15,9 +16,9 @@ import Navigation from "./components/Navigation/Navigation";
 
 const App = () => {
   return (
-    <Router>
-      <Header />
-      <Box sx={{ display: "flex" }}>
+    /* { <Router>
+      <Header /> 
+       <Box sx={{ display: "flex" }}>
         <Box className={"nav"}>
           <Navigation />
         </Box>
@@ -34,6 +35,9 @@ const App = () => {
           </Switch>
         </Box>
       </Box>
+    </Router> }*/
+    <Router>
+      <TemporaryDrawer />
     </Router>
   );
 };
