@@ -11,6 +11,8 @@ body {
   background-position: center;
   background-repeat: initial;
   height: 100vh;
+  color: rgb(255, 255, 255);
+  width: 0% 80%;
 }
 
 code {
@@ -29,4 +31,9 @@ h6 {
 
 appBar {
   display: flex;
+}
+
+.main {
+  width: 85%;
+  margin: 0% auto;
 }
