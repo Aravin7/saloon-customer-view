@@ -36,9 +36,9 @@ const SignIn = () => {
           localStorage.setItem("role", data.role);
           localStorage.setItem("authToken", data.token);
           // let isLoggedIn = localStorage.getItem("isLoggedIn");
-          //validate user as"customer"& Redirect to dashborad
+          //validate user as"customer"& Redirect to dashboard
           history.push("/dashboard");
-          //alert("sucessfuly loginto the system");
+          //alert("successfully log into the system");
           // alert popup when try to log in the non-user of the system
           // setMessage(
           //   "You haven't had any credentials to have log into the System"
