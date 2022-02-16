@@ -7,13 +7,18 @@ import { useHistory } from "react-router-dom";
 
 const SignIn = () => {
   // const dispatch = useDispatch();
-  const [username, setUserName] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const history = useHistory();
 
   const authenticateUser = (e) => {
     e.preventDefault();
-    const data = { username: username, password: password };
+    const data = { email: email, password: password };
+    if (email === "" || password === "") {
+      alert("form fields must be filled out");
+      return false;
+    }
+    console.log("hi");
     fetch("http://localhost:4000/users/authenticate", {
       method: "POST",
       headers: {
@@ -58,12 +63,12 @@ const SignIn = () => {
       <fieldset>
         <ul>
           <li>
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="email">Email:</label>
             <input
               type="text"
-              id="username"
-              onChange={(e) => setUserName(e.target.value)}
-              autoComplete="current-username"
+              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+              autoComplete="current-email"
               required
             />
           </li>
